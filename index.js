@@ -1,0 +1,10 @@
+a = 5;
+b = 6;
+// let temp;
+// temp = a;
+// a = b;  
+// b = temp;
+a += b;
+b = a - b;
+a = a - b;
+alert("a is "+ a + " and"+ " b is " + b );

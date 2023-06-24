@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(images/munnar\ valley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 769px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    letter-spacing: 4px;
+    padding-right: 20px;
+}
+
+li {
+    padding: 0 12px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+}
+
+a:hover {
+    scale: 1.2;
+    transition: ease-in;
+}
+
+.section-1 {
+    margin: 15px;
+}
+
+.title-2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+/* Footer */
+.bg-pink {
+    background: rgb(255, 202, 123);
+}
+
+footer {
+    height: 350px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.t-shadow {
+    color: black;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255);
+}
+
+.footer__left,
+.footer__right {
+    max-width: 250px;
+}
+
+.footer__left img {
+    width: 180px;
+    object-fit: contain;
+}
+
+.footer__left p {
+    margin-block: 15px;
+}
+
+.footer__left .social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__left .social a {
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 22px;
+    color: hsl(249, 95%, 63%);
+}
+
+.footer__left .social a:hover {
+    background: hsl(249, 63%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list h2,
+.footer__right h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.footer__list li {
+    margin-bottom: 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footer__list li:hover {
+    text-decoration: underline;
+}
+
+/* hr */
+.hr {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(182, 182, 182);
+}
+
+/* Credits */
+section.credits {
+    padding: 20px 75px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 0%);
+    gap: 50px;
+}
+
+.credits p a {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(249, 95%, 63%);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+.credits p a:hover {
+    text-decoration: underline;
+    scale: 100%;
+}
+
+.credits span {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 10px;
+}
+
+.credits span a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    color: hsl(0, 0%, 0%);
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.credits span a:hover {
+    scale: 100%;
+}
+
+.color-n {
+    color: hsl(249, 95%, 63%);
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    footer {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__list {
+        margin: 5px 15px;
+    }
+}
+@media screen and (max-width: 912px){
+
+    section.credits {
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .title-2 {
+        font-size: 25px;
+    }
+    .cards {
+        margin: 0 18px;
+    }
+    
+    .hr{
+        width: 80%;
+    }
+    
+    .footer__left, .footer__right {
+        max-width: inherit;
+    }
+}
+@media screen and (max-width: 500px){
+    section.credits {
+        padding: 20px 25px;
+    }
+}
