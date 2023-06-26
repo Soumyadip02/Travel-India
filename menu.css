@@ -1,0 +1,33 @@
+.menu {
+    color: white;
+    display: none !important;
+}
+@media screen and (max-width: 1020px){
+    nav{
+        flex-direction: column;
+        height: 500px;
+        justify-content: flex-start;
+    }
+    nav h2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .links li {
+        padding: 40px 0;
+    }
+    .menu {
+        display: block !important;
+        font-size: 35px !important;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .none{
+        display: none !important;
+    }
+}
+    
